@@ -1,4 +1,15 @@
+:root {
+    --text: #17130f;
+    --background: #f9f6f4;
+    --primary: #b58153;
+    --secondary: #dab493;
+    --accent: #d69861;
+
+}
+    
+
 body {
+    background-color: var(--background);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,12 +20,12 @@ body {
 
 /* NAVBAR RESPONSIVE */
 .navbar {
-    background-color: #333;
-    padding: 15px;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--primary);
+    padding: 15px;
+    color: var(--text);
 }
 
 .logo {
@@ -33,7 +44,7 @@ body {
 }
 
 .menu a {
-    color: white;
+    color: var(--text);
     text-decoration: none;
     padding: 10px;
 }
@@ -52,6 +63,11 @@ body {
     display: block;
 }
 
+.menu a:hover {
+    background-color: var(--secondary);
+}
+
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none;
@@ -61,16 +77,18 @@ body {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #333;
+        background-color:var(--primary);
         z-index: 1;
         animation: fadeIn 0.5s ease-in-out;
     }
 
-    .menu a {
+    .menu a  {
+        color: var(--text);
         width: 100%;
         display: block;
         padding: 15px;
         box-sizing: border-box;
+        font-weight: bold;
     }
 
     .menu-toggle {
@@ -79,6 +97,8 @@ body {
 }
 
 /* Definimos la animación */
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -88,6 +108,13 @@ body {
     }
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
 
 
 
@@ -98,8 +125,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: red;
-    background-color: aquamarine;
 }
 
 .container h1 {
@@ -120,55 +145,11 @@ body {
     font-size: 1.5em;
     margin-bottom: 20px;
     font-weight: 500;
-    color: white;
+    color: var(--text);
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Poppins', sans-serif;
     
 }
-
-
-/* SLIDER */
-
-.slider-container {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-}
-
-.image-container {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-
-}
-
-.btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: aliceblue;
-    font-size: 20px;
-    opacity: 0.5;   
-    cursor: pointer;
-
-}
-
-.btn.prev {
-    left: 10px;
-}
-
-.btn.next {
-    right: 10px;
-}
-
-.btn:hover {
-    opacity: 1;
-    color: aquamarine;
-}
-
 
 
 
