@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    
+    
+}
+
+.container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.bg_image {
+    background-image: url("https://images.pexels.com/photos/8853499/pexels-photo-8853499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    animation: fadeInBg 0.8s ease-in-out;
+}
+
+
+@keyframes fadeInBg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
