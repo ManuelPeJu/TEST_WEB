@@ -64,8 +64,19 @@ body {
 }
 
 .menu a:hover {
-    background-color: var(--secondary);
+    color: var(--secondary);
 }
+
+/* .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+} */
 
 
 @media screen and (max-width: 768px) {
@@ -117,6 +128,20 @@ body {
 }
 
 
+/* HERO */
+
+.hero_section { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+
+}
 
 .container {
     display: flex;
@@ -142,14 +167,100 @@ body {
 }
 
 .container p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 20px;
     font-weight: 500;
     color: var(--text);
-    text-shadow: 2px 2px 4px #000000;
     font-family: 'Poppins', sans-serif;
     
 }
 
+.bg_image {
+    background-image: url("https://images.pexels.com/photos/8853499/pexels-photo-8853499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    animation: fadeInBg 0.9s ease-in-out;
+}
 
 
+@keyframes fadeInBg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+} 
+
+
+
+/* about us */
+
+
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text_container {
+    flex: 1;
+    padding-right: 20px;
+    animation: alternateIn 0.8s ease-in-out;
+}
+
+.text_container h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--text);
+    text-align: center;
+}
+
+.text_container p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.image_container {
+    flex: 1;
+    text-align: center;
+    animation: alternateIn 0.8s ease-in-out;
+}
+
+.image_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    animation: alternateIn 0.8s ease-in-out;
+
+}
+
+@keyframes alternateIn {
+    from {
+        opacity: 0;
+        transform: translateX(-550px);
+
+    }   
+    to {
+        
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+/* SERVICES */
