@@ -26,3 +26,16 @@ window.addEventListener("scroll", () => {
         navbarEl.classList.remove("active");
     }
 })
+
+
+// button
+
+const buttonEl = document.querySelector(".btn");
+
+buttonEl.addEventListener("click", () => {
+    window.scroll({
+        top: 1050,
+        left: 0,
+        behavior: "smooth"
+    });
+})

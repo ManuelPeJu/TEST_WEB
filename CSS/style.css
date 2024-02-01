@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
 }
@@ -136,7 +137,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: relative;
     z-index: 0;
@@ -150,6 +151,24 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    transform: translate(0px, -200px);
+    
+}
+
+.btn {
+    background-color: var(--accent);
+    color: var(--text);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
 }
 
 .container h1 {
@@ -203,7 +222,7 @@ body {
 /* about us */
 
 
-.about_container {
+.info_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,6 +249,7 @@ body {
     color: var(--text);
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
 
 }
 
@@ -261,6 +281,25 @@ body {
     }
 }
 
+@keyframes alternateInReverse {
+    from {
+        opacity: 0;
+        transform: translateX(1500px);
+
+    }   
+    to {
+        
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 
 
 /* SERVICES */
+
+
+.services img {
+
+    animation: alternateInReverse 0.8s ease-in-out;
+}
