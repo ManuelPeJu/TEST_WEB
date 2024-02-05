@@ -6,6 +6,8 @@
     --primary: #b58153;
     --secondary: #dab493;
     --accent: #d69861;
+    --textWhite: #fff;
+
 
 }
     
@@ -347,3 +349,60 @@ body {
 
     animation: alternateInReverse 0.8s ease-in-out;
 }
+
+
+
+/* FOOTER */
+
+.footer-container {
+    background-color: var( --primary);
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-heading {
+    margin-bottom: 10px;
+    font-weight: bold;
+    flex: 1;
+  
+}
+
+.footer-1, .footer-2, .footer-3 {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.footer a {
+    color: var(--textWhite);
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer a:hover {
+    color: var(--accent);
+
+}
+
+.footer-1 {
+    flex: 1;
+    margin-right: 20px;
+    
+}
+
