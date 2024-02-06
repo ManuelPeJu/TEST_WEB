@@ -361,6 +361,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
 
 }
 
@@ -400,9 +404,48 @@ body {
 
 }
 
-.footer-1 {
-    flex: 1;
-    margin-right: 20px;
-    
+
+/* CONTACT */
+
+.contact {
+    margin-bottom: 15px;
 }
 
+.header_h1 {
+    text-align: center;
+}
+
+
+/* Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: alternateIn 0.8s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 150px;
+
+}
+
+.submit_btn {
+    background-color: var(--accent);   
+    color: var(--textWhite);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-top: 10px;
+
+}
