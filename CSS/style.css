@@ -51,6 +51,8 @@ body {
     background-color: var(--primary);
     padding: 15px;
     color: var(--text);
+    font-weight: bold;
+    
 }
 
 .logo {
@@ -346,8 +348,8 @@ body {
 
 
 .services img {
-
     animation: alternateInReverse 0.8s ease-in-out;
+
 }
 
 
@@ -365,7 +367,6 @@ body {
     bottom: 0;
     width: 100%;
     
-
 }
 
 .footer {
@@ -397,6 +398,7 @@ body {
     text-decoration: none;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .footer a:hover {
@@ -409,10 +411,12 @@ body {
 
 .contact {
     margin-bottom: 15px;
+
 }
 
 .header_h1 {
     text-align: center;
+
 }
 
 
