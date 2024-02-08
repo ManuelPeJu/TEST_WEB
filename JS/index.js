@@ -33,8 +33,9 @@ window.addEventListener("scroll", () => {
 const buttonEl = document.querySelector(".btn_info");
 
 buttonEl.addEventListener("click", () => {
+  const aboutEl = document.getElementById("about_us");
     window.scroll({
-        top: 1050,
+        top: aboutEl.offsetTop,
         left: 0,
         behavior: "smooth"
     });
