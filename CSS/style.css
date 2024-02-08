@@ -340,6 +340,14 @@ h6 {
 
 }
 
+.show_1 {
+    display: flex;
+}
+
+.hide_1 {
+    display: none;
+}
+
 @keyframes alternateIn {
     from {
         opacity: 0;
@@ -380,6 +388,18 @@ h6 {
         flex: 1;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .show_1 {
+        display: none;
+
+    }
+
+    .hide_1 {
+        display: flex;
+    }
+    
 }
 
 
