@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
 
 // button
 
-const buttonEl = document.querySelector(".btn");
+const buttonEl = document.querySelector(".btn_info");
 
 buttonEl.addEventListener("click", () => {
     window.scroll({
