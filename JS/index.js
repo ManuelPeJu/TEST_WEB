@@ -48,7 +48,8 @@ buttonEl.addEventListener("click", () => {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 200) {
+  const aboutEl = document.getElementById("about_us");
+  if (document.body.scrollTop > aboutEl.offsetHeight || document.documentElement.scrollTop > aboutEl.offsetHeight) {
     document.getElementById("scrollBtn").style.display = "block";
   } else {
     document.getElementById("scrollBtn").style.display = "none";
