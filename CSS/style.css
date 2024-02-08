@@ -537,6 +537,11 @@ h6 {
 
 }
 
+.form input, label {
+    font-weight: bold;
+
+}
+
 .submit_btn {
     background-color: var(--accent);   
     color: var(--textWhite);
@@ -545,9 +550,15 @@ h6 {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    width: 100%;
+    width: 30%;
     margin-top: 10px;
+    font-weight: bold;
 
+
+}
+
+.submit_btn:hover {
+    background-color: var(--primary);
 }
 
 
