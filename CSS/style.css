@@ -134,6 +134,7 @@ h6 {
 }
 
 
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none;
@@ -284,6 +285,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+
 }
 
 .info_container button a {
@@ -298,6 +300,7 @@ h6 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    justify-items: center;
     flex: 1;
     padding-right: 20px;
     animation: alternateIn 0.8s ease-in-out;
@@ -333,6 +336,7 @@ h6 {
     height: auto;
     border-radius: 5px;
     animation: alternateIn 0.8s ease-in-out;
+    display: inline;
 
 }
 
