@@ -433,7 +433,7 @@ h6 {
     list-style: none;
     margin: 0;
     padding: 0;
-    
+    text-align: center;
 
 }
 
@@ -458,6 +458,7 @@ h6 {
     text-decoration: none;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+    
 
 }
 
@@ -471,6 +472,11 @@ h6 {
 .footer a:hover {
     color: var(--accent);
 
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* SMALL DEVICES */
