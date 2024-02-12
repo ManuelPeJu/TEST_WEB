@@ -628,3 +628,26 @@ textarea {
     background-color: var(--accent); /* Cambia el color de fondo al pasar por encima */
 
 }
+
+
+/* ABOUT US */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    border: 1px solid #ccc;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    display: none;
+  }
