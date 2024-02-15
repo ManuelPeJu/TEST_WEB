@@ -7,6 +7,15 @@ form.addEventListener("submit", (e) => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     console.log(data);
-    window.alert("Thank you for your message, we will get back to you shortly")
     
-})
+    let timerInterval;
+    Swal.fire({
+    title: "Thank you for your message, we will get back to you shortly!",
+    timer: 2500,
+    willClose: () => {
+        clearInterval(timerInterval);
+    }}).then(() => {
+        form.reset();
+    })
+    
+});
