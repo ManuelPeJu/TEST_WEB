@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
 })
 
 
-// button
+// HERO button
 
 const buttonEl = document.querySelector(".btn_info");
 
@@ -45,7 +45,6 @@ buttonEl.addEventListener("click", () => {
 
 // SCROLL TO TOP
 
-window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   const aboutEl = document.getElementById("about_us");
@@ -56,6 +55,12 @@ function scrollFunction() {
   }
 }
 
+
+window.onscroll = function() {
+  scrollFunction()
+
+}
+
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -64,18 +69,4 @@ function scrollToTop() {
 }
 
 
-// // FORM
-
-// const form = document.querySelector(".form");
-
-// form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     const formData = new FormData(form);
-//     const data = Object.fromEntries(formData.entries());
-//     console.log(data);
-    
-// })
-
-
-// ACORDION
 
