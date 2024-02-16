@@ -219,13 +219,8 @@ h6 {
 
 .container h1 {
   font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.container h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .container p {
@@ -234,6 +229,7 @@ h6 {
   font-weight: 500;
   color: var(--text);
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .bg_image {
@@ -377,17 +373,7 @@ h6 {
 
 /* FOOTER */
 
-.footer-container {
-  background-color: var(--primary);
-  padding: 20px;
-  color: var(--textWhite);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  bottom: 0;
-  width: auto;
-}
+
 
 .footer {
   display: flex;
@@ -395,6 +381,20 @@ h6 {
   margin: 0;
   padding: 0;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+    background-color: var(--primary);
+    padding: 20px;
+    color: var(--textWhite);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;   
 }
 
 .footer-heading {
@@ -594,7 +594,7 @@ textarea {
   width: 100%;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
-  height: 57.5vh;
+  margin-top: 100px;
 }
 
 .accordion-item {
@@ -632,3 +632,58 @@ textarea {
 }
 
 
+/* SERVICES */
+
+.services_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.services_header {
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: alternateIn 0.8s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 500px;
+  height: 300px;
+}
+
+.card h2, p ,img {
+  flex: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .services_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .services_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
