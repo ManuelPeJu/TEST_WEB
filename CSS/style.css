@@ -572,7 +572,11 @@ textarea {
   background-color: var(--accent);
 }
 
-/* ABOUT US */
+/* ABOUT US INFO PAGE */
+
+.about_us {
+  height: 100vh;
+}
 
 .FAQS {
   display: flex;
@@ -583,6 +587,7 @@ textarea {
   margin: 0 auto;
   background-color: var(--secondary);
   width: 75%;
+  margin-top: 30px;
 }
 
 .accordion {
@@ -594,7 +599,7 @@ textarea {
   width: 100%;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
-  margin-top: 100px;
+  margin-top: 15vh;
 }
 
 .accordion-item {
@@ -672,6 +677,13 @@ textarea {
 
 .card h2, p ,img {
   flex: 1;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  
 }
 
 @media screen and (max-width: 1024px) {
