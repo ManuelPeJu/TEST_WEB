@@ -304,7 +304,7 @@ h6 {
 }
 
 .image_container img {
-  max-width: 100%;
+  max-width:80%;
   height: auto;
   border-radius: 5px;
   animation: alternateIn 0.8s ease-in-out;
