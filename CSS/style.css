@@ -375,98 +375,55 @@ h6 {
 
 
 
-.footer {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer-container {
-    background-color: var(--primary);
-    padding: 20px;
-    color: var(--textWhite);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;   
-}
-
-.footer-heading {
-  margin-bottom: 10px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: var(--primary);
+  color: var(--textWhite);
   font-weight: bold;
-  flex: 1;
 }
 
-.footer-1,
-.footer-2,
-.footer-3,
-.footer-4 {
-  flex: 1;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer a {
+.footer-container a {
   color: var(--textWhite);
   text-decoration: none;
-  padding: 10px;
-  font-family: "Poppins", sans-serif;
 }
 
-.footer p {
-  color: var(--textWhite);
-  font-family: "Poppins", sans-serif;
-  padding: 10px;
+.footer-container a:hover {
+  color: var(--secondary);
 }
 
-.footer a:hover {
-  color: var(--accent);
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.footer h2 {
+.footer-column {
+  flex: 1 1 25%;
+
+}
+
+.footer-column h2 {
   margin-bottom: 10px;
-  text-align: center;
 }
 
-/* SMALL DEVICES */
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: auto;
-  }
+.footer-column ul li {
+  margin-bottom: 5px;
+}
 
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-1,
-  .footer-2,
-  .footer-3,
-  .footer-4 {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer a {
-    padding: 5px;
-  }
-
-  .footer p {
-    padding: 5px;
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 1 1 100%;
   }
 }
+
 
 /* CONTACT */
 
