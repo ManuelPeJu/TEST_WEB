@@ -671,6 +671,12 @@ textarea {
   flex: 1;
 }
 
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  
+}
+
 @media screen and (max-width: 1024px) {
   .services_grid {
     grid-template-columns: repeat(2, 1fr);
